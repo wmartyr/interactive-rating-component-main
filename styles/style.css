@@ -2,7 +2,7 @@
 *,
 *::before,
 *::after {
-  outline: dashed 1px black;
+  /* outline: dashed 1px gray; */
   box-sizing: border-box;
 }
 
@@ -10,8 +10,9 @@
   --color-primary-orange: hsl(25, 97%, 53%);
   --color-neutral-light-grey: hsl(217, 12%, 63%);
   --color-neutral-medium-grey: hsl(216, 12%, 54%);
-  --color-neutral-dark-blue: hsl(213, 19%, 18%);
-  --color-neutral-darker-blue: hsl(216, 12%, 8%);
+  --color-neutral-dark-blue: hsl(210, 19%, 18%);
+  --color-neutral-darker-blue: hsl(215, 22%, 15%);
+  --color-neutral-darkest-blue: hsl(216, 12%, 8%);
   font-family: 'Overpass', sans-serif;
 }
 
@@ -28,12 +29,6 @@ dl,
 dd {
   margin: 0;
 }
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-} */
 
 /* Set core root defaults */
 html:focus-within {
@@ -76,6 +71,59 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+body {
+  background-color: var(--color-neutral-darkest-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 350px;
+  height: 380px;
+  background-color: var(--color-neutral-darker-blue);
+  border-radius: 20px;
+  padding: 2em;
+}
+
+.round-background {
+  background-color: var(--color-neutral-dark-blue);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+h2 {
+  font-size: 0.9375rem;
+  color: var(--color-neutral-light-grey);
+  font-weight: 400;
+}
+
+.rating-row {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+}
+
+.rating {
+  color: var(--color-neutral-light-grey);
+  font-weight: 700;
 }
 
 .attribution {
