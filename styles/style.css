@@ -186,6 +186,7 @@ button:hover {
 .thank-you-sub-text {
   text-align: center;
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -194,4 +195,11 @@ button:hover {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 400px) {
+  .card {
+    width: 400px;
+    height: 400px;
+  }
 }
