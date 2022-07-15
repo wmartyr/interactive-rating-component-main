@@ -1,8 +1,7 @@
-let ratingChoice;
+let ratingChoice = 0;
 
 const tyCard = document.querySelector(".thank-you-state");
 const ratingCard = document.querySelector(".rating-state");
-tyCard.style["display"] = "none";
 
 const ratingButtons = document.querySelectorAll(".rating-selector");
 ratingButtons.forEach((ratingButton) => {
@@ -10,3 +9,11 @@ ratingButtons.forEach((ratingButton) => {
     ratingChoice = ratingButton.id;
   });
 });
+
+const submitButton = document.querySelector(".rating-submit");
+submitButton.addEventListener("click", () => {
+  if (ratingChoice !== 0) {
+    tyCard.style["display"] = "flex";
+    ratingCard.style["display"] = "none";
+  }
+})

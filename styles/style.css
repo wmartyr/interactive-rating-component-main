@@ -150,6 +150,10 @@ button {
   letter-spacing: 0.1rem;
 }
 
+.thank-you-state {
+  display: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
