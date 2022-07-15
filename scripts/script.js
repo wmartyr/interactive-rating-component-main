@@ -6,7 +6,11 @@ const ratingCard = document.querySelector(".rating-state");
 const ratingButtons = document.querySelectorAll(".rating-selector");
 ratingButtons.forEach((ratingButton) => {
   ratingButton.addEventListener("click", () => {
+    if (ratingChoice !== 0) {
+      document.getElementById(ratingChoice).classList.remove("rating-highlight");
+    }
     ratingChoice = ratingButton.id;
+    document.getElementById(ratingButton.id).classList.add("rating-highlight");
   });
 });
 

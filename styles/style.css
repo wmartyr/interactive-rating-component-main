@@ -111,6 +111,11 @@ body {
   cursor:pointer;
 }
 
+.rating-highlight {
+  background-color: var(--color-neutral-medium-grey);
+  color: white;
+}
+
 h1 {
   font-size: 1.5rem;
   color: white;
