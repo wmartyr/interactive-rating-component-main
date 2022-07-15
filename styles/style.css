@@ -111,6 +111,11 @@ body {
   cursor:pointer;
 }
 
+.rating-selector:hover {
+  background-color: var(--color-primary-orange);
+  color: white;
+}
+
 .rating-highlight {
   background-color: var(--color-neutral-medium-grey);
   color: white;
@@ -153,6 +158,12 @@ button {
   font-weight: 700;
   padding: 1rem;
   letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--color-primary-orange);
 }
 
 .thank-you-state {
