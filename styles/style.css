@@ -28,6 +28,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  padding: 0;
 }
 
 /* Set core root defaults */
@@ -88,10 +89,10 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 350px;
-  height: 380px;
+  height: 390px;
   background-color: var(--color-neutral-darker-blue);
   border-radius: 20px;
-  padding: 2em;
+  padding: 1.8em;
 }
 
 .round-background {
@@ -102,6 +103,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--color-neutral-light-grey);
+  font-weight: 700;
 }
 
 h1 {
@@ -126,9 +129,27 @@ h2 {
   font-weight: 700;
 }
 
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--color-primary-orange);
+  color: white;
+  height: 3rem;
+  align-self: stretch;
+  border-radius: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--color-neutral-light-grey);
 }
 
 .attribution a {
