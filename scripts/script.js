@@ -19,5 +19,7 @@ submitButton.addEventListener("click", () => {
   if (ratingChoice !== 0) {
     tyCard.style["display"] = "flex";
     ratingCard.style["display"] = "none";
+    const resultLine = document.querySelector(".result-line");
+    resultLine.textContent = `You selected ${ratingChoice} out of 5`;
   }
 })

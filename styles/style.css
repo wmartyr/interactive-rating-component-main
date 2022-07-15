@@ -108,7 +108,7 @@ body {
 }
 
 .rating-selector {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .rating-selector:hover {
@@ -122,8 +122,9 @@ body {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: white;
+  font-weight: 700;
 }
 
 h2 {
@@ -168,8 +169,23 @@ button:hover {
 
 .thank-you-state {
   display: none;
+  align-items: center;
+  justify-content: space-around;
 }
 
+.result-line {
+  background-color: var(--color-neutral-dark-blue);
+  border-radius: 2rem;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary-orange);
+}
+
+.thank-you-sub-text {
+  text-align: center;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
