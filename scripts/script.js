@@ -14,7 +14,7 @@ ratingButtons.forEach((ratingButton) => {
   });
 });
 
-const submitButton = document.querySelector(".rating-submit");
+const submitButton = document.querySelector("button");
 submitButton.addEventListener("click", () => {
   if (ratingChoice !== 0) {
     tyCard.style["display"] = "flex";
